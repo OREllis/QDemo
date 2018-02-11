@@ -21,7 +21,6 @@ public class Queue {
             System.out.println(" - Queue is empty.");
             return (char) 0;
         }
-
         return q [getloc++];
     }
 }
