@@ -1,31 +1,3 @@
-class Queue{
-    char[] q;   //holds the queue
-    int putloc, getloc;
-
-    Queue(int size){
-        q  = new char[size];
-        putloc = getloc = 0;
-    }
-
-    void put(char ch){
-        if (putloc == q.length){
-            System.out.println(" - Queue is full.");
-            return;
-        }
-
-        q[putloc++] = ch;
-    }
-
-    char get(){
-        if (getloc == putloc){
-            System.out.println(" - Queue is empty.");
-            return (char) 0;
-        }
-
-        return q [getloc++];
-    }
-}
-
 class QDemo{
     public static void main(String args[]){
         Queue bigQ = new Queue(100),
